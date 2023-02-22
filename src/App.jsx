@@ -1,16 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import NavBar from './Componentes/NavBar'
-import ItemListContainer from './Container/ItemListContainer';
+import Header from "./components/Header/Header.jsx";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
+import Layout from "./components/Layout/Layout.jsx";
 
-
-function App() { // componente contenedor
-  
+function App() {
   return (
     <div className="App">
-      <NavBar />
-      <ItemListContainer saludo ='Bienvenido a ShopCart' />
+      <Layout>
+        <Header />
+        <ItemListContainer saludo="Bienvenido a ShopCart" />
+      </Layout>
     </div>
   );
 }
 
-export default App
+export default App;
